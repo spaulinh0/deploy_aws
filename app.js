@@ -1,10 +1,10 @@
 //Iniciando projeto Express.js #31
 // Carrengando módulos
-  const express = require('express')
+  const express = require('express') //Foi npm
   console.log("FUNCIONADO-1 ")
-  const handlebars = require('express-handlebars')
+  const handlebars = require('express-handlebars')//foi
   console.log("FUNCIONADO-2 ") 
-  const bodyParser = require("body-parser")
+  const bodyParser = require("body-parser")//foi
   console.log("FUNCIONADO-3 ")
   //recebe a função que vem do express 
   const app = express()
@@ -12,12 +12,12 @@
   //Pegando o arquivo admin que está dentro da pasta routes.
   const admin = require("./routes/admin")
   //Módulo padrão do Node que serve para manipular pastas. #33
-  const path = require("path")
+  const path = require("path")//foi
   console.log("FUNCIONADO-5 ")
-  const mongoose = require("mongoose")
-  const session = require("express-session")
+  const mongoose = require("mongoose")//foi
+  const session = require("express-session")//foi
   //Flash é o tipo de sessão que só aparece uma vez, quando uma pgína e recarregada a mensagem some.
-  const flash = require("connect-flash")
+  const flash = require("connect-flash")//foi
   //Carregando model de postagens #50
   require("./models/Postagem")
   //Declarando model de postagem #50
@@ -28,7 +28,7 @@
   //Importando rota de usuario #54
   const usuarios = require("./routes/usuario")
   //Carregando o passport #58
-  const passport = require("passport")
+  const passport = require("passport")//foi
   //Chamando o arquivo (auth) e passando o passport para ele. #58
   require("./config/auth")(passport)
 
